@@ -3,7 +3,7 @@ import { useRecoilState, useRecoilValue } from "recoil";
 import { counterState, multipliedCounterSelector } from "../../recoil/atoms/CounterAtoms";
 import { useSpring, animated, config } from "react-spring";
 
-function RecoilCart(props) {
+function RecoilCounter(props) {
   const RecoilCounter = useRecoilState(counterState);
   const multipliedCounter = useRecoilValue(multipliedCounterSelector);
 
@@ -14,7 +14,7 @@ function RecoilCart(props) {
     number: multipliedCounter,
     delay: 200,
     config: config.molasses,
-    onRest: () => setCounterFlip(true)
+    onRest: () => setCounterFlip(true),
   });
 
   return (
@@ -23,15 +23,17 @@ function RecoilCart(props) {
         <h2>
           Recoil Counter value is : <span>{RecoilCounter}</span>
         </h2>
-        </div>
+      </div>
       <div className="form-group">
         <h2>
           Multiplied Counter ({RecoilCounter} * 10) is :
-           <animated.span>{CounterAnimatedStyle.to(n => n.toFixed(2))}</animated.span>
+          <animated.span>
+            {CounterAnimatedStyle.to((n) => n.toFixed(2))}
+          </animated.span>
         </h2>
       </div>
     </div>
   );
 }
 
-export default RecoilCart;
+export default RecoilCounter;

@@ -7,8 +7,9 @@ import {
   Link
 } from "react-router-dom";
 import Cart from "./pages/cart/index";
-import ReduxCart from "./pages/cart/reduxCounterIndex";
-import RecoilCart from "./pages/cart/recoilCounter";
+import AllCounters from "./pages/cart/allCounters";
+import ReduxCounter from "./pages/cart/reduxCounter";
+import RecoilCounter from "./pages/cart/recoilCounter";
 import List from "./pages/list";
 import Previewsize from "./pages/windowSizePreview/index";
 
@@ -27,11 +28,14 @@ function App() {
             <Link to="/cart">
               <button className="btn">My cart</button>
             </Link>
-            <Link to="/reduxCart">
-              <button className="btn">redux counter</button>
+            <Link to="/allCounters">
+              <button className="btn">All Counters</button>
             </Link>
-            <Link to="/recoilCart">
-              <button className="btn">recoil counter</button>
+            <Link to="/reduxCounter">
+              <button className="btn">Redux counter</button>
+            </Link>
+            <Link to="/recoilCounter">
+              <button className="btn">Recoil counter</button>
             </Link>
             <Link to="/windowdimensions">
               <button className="btn">Window Size</button>
@@ -40,8 +44,9 @@ function App() {
           <Routes>
             <Route path="/" element={<List />}></Route>
             <Route path="/cart" element={<Cart hello="Hello Noura" />}></Route>
-            <Route path="/reduxCart" element={<ReduxCart />}></Route>
-            <Route path="/recoilCart" element={<RecoilCart />}></Route>
+            <Route path="/allCounters" element={<AllCounters />}></Route>
+            <Route path="/reduxCounter" element={<ReduxCounter />}></Route>
+            <Route path="/recoilCounter" element={<RecoilCounter />}></Route>
             <Route path="/windowdimensions" element={<Previewsize />}></Route>
           </Routes>
         </div>
