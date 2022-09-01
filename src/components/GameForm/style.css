@@ -12,21 +12,21 @@ form {
   background-color: white;
   width: 60vw;
   margin: 0 auto;
-  padding: 30px;
+  padding: 40px;
   box-shadow: 0 2px 10px 0 #ddd;
 }
 label {
-  margin-right: 10%;
   width: 18%;
 }
 input {
-  width: 26%;
+  width: 28%;
   margin-right: 10%;
 }
 .form-group {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  flex-wrap: wrap;
   margin-bottom: 20px;
 }
 .preview .form-group {
@@ -44,6 +44,7 @@ button {
   background-color: #0085cad1;
   font-weight: bold;
   width: 35%;
+  margin-right: 6% !important;
   border-radius: 0.25rem;
 }
 input {
@@ -53,11 +54,9 @@ input {
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 0.25rem;
-  color: #495057;
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
 }
 input:focus {
-  color: #495057;
   outline: 0;
   border-color: #0085ca4a;
   box-shadow: 0 0 0 0.12rem #0085ca26;
@@ -69,16 +68,28 @@ input:focus {
   width: auto;
 }
 .preview h2,
-.preview h3{
-    width: 30%;
-    font-size: 20px;
+.preview h3 {
+  width: 30%;
+  font-size: 20px;
 }
 .preview h2,
-.preview h3{
+.preview h3 {
   font-weight: 500;
 }
 .preview h2 span,
-.preview h3 span{
+.preview h3 span {
   color: lightslategray;
   margin-left: 1%;
+}
+form .val {
+  color: lightslategray;
+  display: initial;
+  font-size: 0.9rem;
+  margin-left: 10px;
+}
+.preview h2 span,
+.preview h3 span,
+form .val,
+input {
+  color: lightslategray;
 }

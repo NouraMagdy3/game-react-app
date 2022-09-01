@@ -19,32 +19,32 @@ function App() {
 
     return (
       <Router>
-      <div id="App">
-        <div className="nav-bar">
-          <Link to="/">
-            <button className="btn">Games List</button>
-          </Link>
-          <Link to="/cart">
-            <button className="btn">My cart</button>
-          </Link>
-          <Link to="/reduxCart">
-            <button className="btn">redux cart</button>
-          </Link>
-          <Link to="/recoilCart">
-            <button className="btn">recoil cart</button>
-          </Link>
-          <Link to="/windowdimensions">
-          <button className="btn">Window Size</button>
-          </Link>
+        <div id="App">
+          <div className="nav-bar">
+            <Link to="/">
+              <button className="btn">Games List</button>
+            </Link>
+            <Link to="/cart">
+              <button className="btn">My cart</button>
+            </Link>
+            <Link to="/reduxCart">
+              <button className="btn">redux counter</button>
+            </Link>
+            <Link to="/recoilCart">
+              <button className="btn">recoil counter</button>
+            </Link>
+            <Link to="/windowdimensions">
+              <button className="btn">Window Size</button>
+            </Link>
           </div>
-        <Routes>
-          <Route path="/" element={<List />}></Route>
-          <Route path="/cart" element={<Cart hello = "Hello Noura"/>}></Route>
-          <Route path="/reduxCart" element={<ReduxCart />}></Route>
-          <Route path="/recoilCart" element={<RecoilCart />}></Route>
-          <Route path="/windowdimensions" element={<Previewsize />}></Route>
-        </Routes>
-      </div>
+          <Routes>
+            <Route path="/" element={<List />}></Route>
+            <Route path="/cart" element={<Cart hello="Hello Noura" />}></Route>
+            <Route path="/reduxCart" element={<ReduxCart />}></Route>
+            <Route path="/recoilCart" element={<RecoilCart />}></Route>
+            <Route path="/windowdimensions" element={<Previewsize />}></Route>
+          </Routes>
+        </div>
       </Router>
     );
 

@@ -6,7 +6,7 @@ const styles = generateStyle();
 
 export const renderGameElement = (gameData, isCart, onClick) => (
   <div className="g-card" key={gameData.id} style = { styles.container } >
-    <h2 className="title">Title: {gameData.name}</h2>
+    <h3 className="title">Title: {gameData.name}</h3>
     <h4 className="subtitle" style = { styles.gameTitle }>Genre: {gameData.genre}</h4>
     <h4 className="subtitle" style = { styles.gameTitle }>Year: {gameData.year}</h4>
     <h4 className="subtitle" style = { styles.gameTitle }>Developer: {gameData.developer}</h4>

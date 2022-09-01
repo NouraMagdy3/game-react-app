@@ -55,7 +55,10 @@ class GameForm extends React.Component {
               onChange={this.handleChange}
               required
             />
-            <span>Game title value is : {this.state.formData["title"]}</span>
+            <span>
+              Game title value is :
+              <p className="val">{this.state.formData["title"]}</p>
+            </span>
           </div>
           <div className="form-group">
             <label htmlFor="genre">Game Genre</label>
@@ -67,7 +70,10 @@ class GameForm extends React.Component {
               onChange={this.handleChange}
               required
             />
-            <span>Game genre value is : {this.state.formData["genre"]}</span>
+            <span>
+              Game genre value is :
+              <p className="val">{this.state.formData["genre"]}</p>
+            </span>
           </div>
           <div className="form-group">
             <label htmlFor="year">Game Year</label>
@@ -82,7 +88,10 @@ class GameForm extends React.Component {
             <span style={{ color: "red", marginRight: "5px" }}>
               {this.state.errors["year"]}
             </span>
-            <span>Game year value is : {this.state.formData["year"]}</span>
+            <span>
+              Game year value is :
+              <p className="val">{this.state.formData["year"]}</p>
+            </span>
           </div>
           <div className="form-group">
             <label htmlFor="developer">Game Developer</label>
@@ -95,12 +104,12 @@ class GameForm extends React.Component {
               required
             />
             <span>
-              Game developer value is : {this.state.formData["developer"]}
+              Game developer value is :
+              <p className="val"> {this.state.formData["developer"]}</p>
             </span>
           </div>
-          <Button
-          variant="contained"
-          color="primary" type="submit">Submit New Game 
+          <Button variant="contained" color="primary" type="submit">
+            Submit New Game
           </Button>
         </form>
       </section>

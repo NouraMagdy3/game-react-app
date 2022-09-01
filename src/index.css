@@ -39,4 +39,5 @@ code {
 }
 .MuiButton-containedPrimary {
     background-color: #0085ca !important;
+    margin-top: 2% !important;
 }
