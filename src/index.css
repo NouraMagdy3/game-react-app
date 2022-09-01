@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.nav-bar{
+  background-color: #a3d3ec4d;
+  padding: 15px 50px;
+  box-shadow: 0 2px 15px 0 rgb(0 0 0 / 10%);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.nav-bar a{
+  text-decoration: none !important;
+}
+.nav-bar .btn:hover{
+  color: #f39c12;
+  font-weight: bold;
+}
+.nav-bar button{
+  width: 100%;
+  margin-right: 2%;
+  color: black;
+  font-size: 1.1rem;
+  transition: ease all 0.3s;
+  background: none;
+  margin-top: 0;
+  font-weight: lighter;
+}
+.MuiButton-containedPrimary {
+    background-color: #0085ca !important;
+}
