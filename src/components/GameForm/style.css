@@ -16,7 +16,7 @@ form {
   box-shadow: 0 2px 10px 0 #ddd;
 }
 label {
-  width: 18%;
+  width: 22%;
 }
 input {
   width: 28%;
@@ -26,8 +26,11 @@ input {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  flex-wrap: wrap;
   margin-bottom: 20px;
+}
+.nav-bar,
+.form-group {
+  flex-wrap: wrap;
 }
 .preview .form-group {
   padding: 15px 15px 15px 30px;
@@ -44,7 +47,7 @@ button {
   background-color: #0085cad1;
   font-weight: bold;
   width: 35%;
-  margin-right: 6% !important;
+  margin-right: 3% !important;
   border-radius: 0.25rem;
 }
 input {
@@ -92,4 +95,10 @@ form .val {
 form .val,
 input {
   color: lightslategray;
+}
+@media (max-width: 991px) {
+  Button {
+    width: auto;
+    float: left;
+  }
 }

@@ -35,7 +35,7 @@ class List extends React.Component {
               id: i,
               name: game.title,
               genre: game.producer,
-              year: game.release_date,
+              date: game.release_date,
               developer: game.director
             });
             //console.log(list);

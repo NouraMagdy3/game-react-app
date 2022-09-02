@@ -19,7 +19,7 @@ class GameForm extends React.Component {
       id: this.props.gamesData.length,
       name: data["title"],
       genre: data["genre"],
-      year: data["year"],
+      date: data["date"],
       developer: data["developer"],
     };
 
@@ -28,16 +28,17 @@ class GameForm extends React.Component {
 
   handleChange = (event) => {
     const { name, value } = event.target;
+    /*if we have a year (being only a number)
     if (name === "year" && isNaN(value)) {
       this.setState({
-        errors: { ...this.state.errors, [name]: " Year Should be a number" },
+        errors: { ...this.state.errors, [name]: "Year Should be a number" },
       });
-    } else {
-      this.setState({
-        formData: { ...this.state.formData, [name]: value }, //...this.state.formData it's the old value
-        errors: {},
-      });
-    }
+    } 
+    else {*/
+    this.setState({
+      formData: { ...this.state.formData, [name]: value }, //...this.state.formData it's the old value
+      errors: {},
+    });
   };
 
   render() {
@@ -76,21 +77,21 @@ class GameForm extends React.Component {
             </span>
           </div>
           <div className="form-group">
-            <label htmlFor="year">Game Year</label>
+            <label htmlFor="date">Game Release Date</label>
             <input
               type="text"
-              name="year"
-              id="year"
-              value={this.state.formData["year"]}
+              name="date"
+              id="date"
+              value={this.state.formData["date"]}
               onChange={this.handleChange}
               required
             />
-            <span style={{ color: "red", marginRight: "5px" }}>
-              {this.state.errors["year"]}
-            </span>
             <span>
-              Game year value is :
-              <p className="val">{this.state.formData["year"]}</p>
+              Game release date value is :
+              <p className="val">{this.state.formData["date"]}</p>
+            </span>
+            <span style={{ color: "red", marginRight: "5px" }}>
+              {this.state.errors["date"]}
             </span>
           </div>
           <div className="form-group">

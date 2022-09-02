@@ -12,7 +12,8 @@ const generateStyle = (parameters) => ({
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
-        flexWrap: "wrap"
+        flexWrap: "wrap",
+        margin: "50px auto",
     },
     gameTitle:{
         color: "#63798f",

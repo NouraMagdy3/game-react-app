@@ -21,28 +21,28 @@ handleSubmit = (event) => {
 
     render() {
         return (
-            <section>
+          <section>
             <h2>Add New Game </h2>
             <form id="game-form" onSubmit={this.handleSubmit}>
-                <div className="form-group">
+              <div className="form-group">
                 <label htmlFor="title">Game Title</label>
                 <input type="text" name="title" id="title" />
-                </div>
-                <div className="form-group">
+              </div>
+              <div className="form-group">
                 <label htmlFor="genre">Game Genre</label>
-                <input type="text" name="genre" id="genre" required/>
-                </div>
-                <div className="form-group">
-                <label htmlFor="year">Game Year</label>
-                <input type="text" name="year" id="year" required/>
-                </div>
-                <div className="form-group">
+                <input type="text" name="genre" id="genre" required />
+              </div>
+              <div className="form-group">
+                <label htmlFor="date">Game Release Date</label>
+                <input type="text" name="date" id="date" required />
+              </div>
+              <div className="form-group">
                 <label htmlFor="developer">Game Developer</label>
-                <input type="text" name="developer" id="developer" required/>
-                </div>
-                <button type="submit">Submit New Game</button>
+                <input type="text" name="developer" id="developer" required />
+              </div>
+              <button type="submit">Submit New Game</button>
             </form>
-            </section>
+          </section>
         );
     }
 }
