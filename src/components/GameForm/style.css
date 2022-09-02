@@ -82,7 +82,7 @@ input:focus {
 .preview h2 span,
 .preview h3 span {
   color: lightslategray;
-  margin-left: 1%;
+  margin: auto 2%;
 }
 form .val {
   color: lightslategray;
